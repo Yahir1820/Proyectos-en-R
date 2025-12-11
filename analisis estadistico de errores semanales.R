@@ -6,6 +6,7 @@ erroresAcum <- cumsum(errores)
 
 plot(erroresAcum,
      type="o", col="blue",
-     lwd=2, xlab="Semanas", 
+     lwd=2, 
+     xlab="Semanas", 
      ylab="Errores semanales",
      main="Evolución de errores semanales")

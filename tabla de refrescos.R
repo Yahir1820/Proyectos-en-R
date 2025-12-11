@@ -23,5 +23,19 @@ frecuencia_porcentual
 #Grafico de barras
 barplot(tabla, main = "Refrescos", col = c("blue", "red", "yellow", "black", "green") )
 
+#plot culero
+plot(tabla, lwd=20, main = "Refrescos", col = c("blue", "red", "yellow", "black", "green") )
+
+#para usar grafica de pastel 3d se usa la libreria plotrix
+#labels es para ponerle el nombre de los vectores
 library(plotrix)
-pie3D(tabla,  main = "Refrescos", col = c("blue", "red", "violet", "purple", "green"))
+pie3D(tabla, 
+      labels= Refrescos, 
+      main = "Refrescos", 
+      col = c("blue", "red", "violet", "purple", "green"))
+
+
+#para grafica de pastel normal
+pie(tabla, 
+    main = "Refrescos", 
+    col = c("blue", "red", "violet", "purple", "green"))
